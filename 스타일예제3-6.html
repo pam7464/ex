@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타일예제3-6</title>
+  <style>
+    body{
+      background-color:black;
+    }
+    h1{
+      margin-top:100px;
+      font-size:100px;
+      text-align:center;
+      color:black;
+      text-shadow:
+                  0      0    8px #cccccc,
+                  -4px -10px 12px #ffff33,
+                  4px  -20px 16px #ffdd33,
+                  -4px -30px 20px #ff8800,
+                  4px  -40px 24px #ff0000;
+                  ;
+    }
+    .right-shadow{
+      color:white;
+      text-shadow:5px 0 10px #ff0000;
+    }
+    .left-bottom-shadow{
+      color:#ffffff;
+      text-shadow:-5px 5px 5px #00ff00;
+    }
+    .outer-glow{
+      width:300px;
+      height:100px;
+      margin: 0 auto;
+      border:1px solid white;
+      padding:20px;
+      font-size:30px;
+      font-weight:900;
+      color:#ffffff;
+      text-align:center;
+      line-height:100px;
+      text-shadow:0 0 5px rgba(255,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS3</h1>
+  <h2 class="right-shadow">오른쪽 그림자</h2>
+  <div class="left-bottom-shadow">왼쪽아래방향 그림자</div>
+  <div class="outer-glow">외부 광선효과</div>
+</body>
+</html>

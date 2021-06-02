@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타일예제3-5</title>
+  <style>
+    div{
+      width:300px;
+      height:100px;
+      margin:2em auto;
+      border:1px solid black;
+      padding:1em;
+      font-size:20px;
+      color:brown;
+    }
+    .left-align{
+      text-align:left;
+      line-height:100px;
+    }
+    .center-align{
+      text-align:center;
+      line-height:100px;
+    }
+    .right-align{
+      text-align:right;
+      line-height:100px;
+    }
+    .top-align{
+      line-height:50px;
+    }
+    .middle-align{
+      text-decoration-style:solid;
+      text-decoration-color:black;
+      text-decoration-line:underline;
+    }
+    div[class*="eng"]{
+      text-align:center;
+      line-height:100px;
+    }
+    .eng-box01{
+      text-transform:uppercase;
+    }
+    .eng-box02{
+      text-transform: lowercase;
+    }
+    .eng-box03{
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+<body>
+  <div class="left-align">왼쪽정렬</div>
+  <div class="center-align">가운데정렬</div>
+  <div class="right-align">오른쪽정렬</div> 
+  
+  <div class="top-align">이 박스의 내용은 세로방향으로 윗쪽정렬</div>
+  <div class="middle-align">이 박스의 내용은 세로방향으로 중간정렬</div>
+  <div class="bottom-align">이 박스의 내용은 세로방향으로 아래정렬</div>
+
+  <div class="eng-box01">lower alphabat</div>
+  <div class="eng-box02">UPPER ALPHABAT</div>
+  <div class="eng-box03">lower alphabat</div>
+</body>
+</html>
