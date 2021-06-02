@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타일예제1-3</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+      font-family: sans-serif;
+    }
+    ul,ol,li{
+      list-style: none;
+    }
+    a{
+      color:#000000;
+      text-decoration: none;
+    }
+    .clearfix::after{
+      content:'';
+      display: block;
+      clear:both;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <h1>사이트 제목</h1>
+    </header>
+    <section class="clearfix">
+      <aside>
+        <h2>사이드바</h2>
+        <ul>
+          <li>항목1</li>
+          <li>항목2</li>
+          <li>항목3</li>
+          <li>항목4</li>
+        </ul>
+      </aside>
+      <article>
+        <h2>본문</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias suscipit qui delectus reprehenderit asperiores quasi quaerat illum molestiae ipsum ex, assumenda consectetur reiciendis incidunt quidem error, eius ut, sapiente officiis!
+          Totam excepturi officia quis expedita, impedit nihil nisi, molestias aspernatur perferendis deserunt provident tempora maiores amet, iure aperiam ea accusantium sapiente. Vel quia placeat exercitationem quaerat, vero amet ipsam cupiditate!
+          Reiciendis, a. Impedit cupiditate quia deserunt. Quasi nam expedita reiciendis consectetur, sapiente odit eveniet veniam neque ducimus, excepturi earum ratione eos. Modi, minima nihil maxime sint ipsa corrupti deserunt laborum.
+        </p>
+      </article>
+      <aside>
+        <h2>사이드바</h2>
+        <ul>
+          <li>항목1</li>
+          <li>항목2</li>
+          <li>항목3</li>
+          <li>항목4</li>
+        </ul>
+      </aside>
+    </section>
+    <footer>
+      <h2>푸터</h2>
+      <address>연락처</address>
+      <strong>저작권</strong>
+    </footer>
+  </div>
+</body>
+</html>
