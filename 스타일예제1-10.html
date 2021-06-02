@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타일예제1-10</title>
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    div{
+      width:200px;
+      height:200px;
+      margin:100px auto;
+      border:1px solid black;
+      padding:19px;
+    }
+    div:first-child{
+      border-top-right-radius:100px;
+    }
+    div:nth-child(2){
+      border-bottom-right-radius:100px;
+    }
+    div:nth-child(3){
+      border-bottom-left-radius:100px;
+    }
+    div:nth-child(4){
+      border-top-left-radius:100px;
+    }
+    div:nth-child(5){
+      border-radius:100px;
+    }
+  </style>
+</head>
+<body>
+  <div>BOX1</div>
+  <div>BOX2</div>
+  <div>BOX3</div>
+  <div>BOX4</div>
+  <div>BOX5</div>
+</body>
+</html>

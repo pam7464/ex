@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타일예제1-8</title>
+  <style>
+    a{
+      color:red;
+    }
+    a:link{
+      color:green;
+    }
+    a:visited{
+      color:blue;
+    }
+    a:hover{
+      color:yellow;
+    }
+    div{
+      width:200px;
+      height:600px;
+      background-color:red;
+    }
+    div::before{
+      content:"";
+      display:block;
+      width:200px;
+      height:200px;
+      background-color:green;
+    }
+    div::after{
+      content:"";
+      display:block;
+      width:200px;
+      height:200px;
+      background-color:blue;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타일예제2-2</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+    }
+    .image-box{
+      width:1000px;
+      height:500px;
+      margin:20px;
+      border:1px solid black;
+      padding:20px;
+    }
+    #img-box01{
+      /* background-color:red; */
+      /* background-image:url(./images/summer05.jpg); */
+      /* background-repeat: no-repeat; */
+      /* background-size:50%; */
+      /* background-position:center; */
+      background:red url(./images/summer05.jpg) no-repeat 50% center;    
+    }
+    #img-box02{
+      background-color:green;
+      background-image:url(./images/summer01.jpg);
+    }
+    #img-box03{
+      background-color:blue;
+      background-image:url(./images/summer02.jpg);
+      background-size:250px;
+    }
+    #img-box04{
+      background-color:cyan;
+      background-image:url(./images/summer03.jpg);
+      background-size:400px;
+      background-repeat:no-repeat;
+    }
+    #img-box05{
+      background-color:yellow;
+      background-image: url(./images/summer04.jpg);
+      background-size:500px;
+      background-repeat:no-repeat;
+      background-position:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-box" id="img-box01"></div>
+  <div class="image-box" id="img-box02"></div>
+  <div class="image-box" id="img-box03"></div>
+  <div class="image-box" id="img-box04"></div>
+  <div class="image-box" id="img-box05"></div>
+</body>
+</html>
