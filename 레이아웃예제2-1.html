@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃예제2-1</title>
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+      font-family:sans-serif;
+    }
+    ul,ol,li{
+      list-style:none;
+    }
+    a{
+      color:#000000;
+      text-decoration:none;
+    }
+    .clearfix::after{
+      content:'';
+      display:block;
+      clear:both;
+    }
+
+    .box{
+      width:100px;
+      height:100px;
+      text-align:center;
+      line-height:100px;
+      /* fixed => 브라우저를 기준으로 위치를 지정한다 */
+      position:fixed;
+    }
+    #box01{
+      background-color: red;
+      left:10px;
+      top:30px;
+    }
+    #box02{
+      background-color: green;
+      right:0;
+      top:0;
+    }
+    #box03{
+      background-color: blue;
+      right:50px;
+      bottom:100px;
+    }
+    #box04{
+      background-color: powderblue;
+      left:-50px;
+      bottom:0;
+    }
+    #box05{
+      background-color: lightcoral;
+      left:500px;
+      top:300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="box01">박스1</div>
+  <div class="box" id="box02">박스2</div>
+  <div class="box" id="box03">박스3</div>
+  <div class="box" id="box04">박스4</div>
+  <div class="box" id="box05">박스5</div>
+</body>
+</html>
