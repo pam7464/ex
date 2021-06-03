@@ -38,18 +38,35 @@
       float:left;
       width:270px;
       height:100px;
+      /* font-family:Roboto,sans-serif; */
+      /* font-weight:900; */
+      /* font-size:48px; */
+      /* color:#ffffff; */
+      text-align:center;
+      line-height:100px;
+    }
+    #main-logo>a{
       font-family:Roboto,sans-serif;
       font-weight:900;
       font-size:48px;
       color:#ffffff;
-      text-align:center;
-      line-height:100px;
     }
     #btn-ham{
       float:right;
       width:90px;
       height:100px;
       padding:33px 28px;
+      position:relative;
+    }
+    #btn-ham::after{
+      content:'';
+      display:block;
+      width:34px;
+      height:34px;      
+      position:absolute;
+      left:28px;
+      top:33px;
+      cursor:pointer;
     }
     .line{
       width:34px;
@@ -67,7 +84,7 @@
   <div id="wrap">
     <header>
       <h1 id="main-logo">
-        HOLLYS
+        <a href="#">HOLLYS</a>        
       </h1>
       <ul id="btn-ham">
         <li class="line" id="line01">햄버거버튼</li>
