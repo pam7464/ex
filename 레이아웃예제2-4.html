@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃예제2-4</title>
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+      font-family:sans-serif;
+    }
+    ul,ol,li{
+      list-style:none;
+    }
+    a{
+      color:#000000;
+      text-decoration:none;
+    }
+    .clearfix::after{
+      content:'';
+      display:block;
+      clear:both;
+    }
+  </style>
+</head>
+<body>
+  <ul id="par-box">
+    <li id="box01">박스1</li>
+    <li id="box02">박스2</li>
+    <li id="box03">박스3</li>
+    <li id="box04">박스4</li>
+    <li id="box05">박스5</li>
+  </ul>
+</body>
+</html>
