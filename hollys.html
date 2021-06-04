@@ -45,6 +45,7 @@
     header{
       height:100px;
       background-color:#b5121b;
+      position:relative;
     }
     #main-logo{
       width:246px;
@@ -60,8 +61,12 @@
     #btn-menu{
       width:34px;
       height:34px;
+      position:absolute;
+      right:16px;
+      top:33px;
+      cursor:pointer;
     }
-    #btn-menu::before{
+    #btn-menu::before,#btn-menu::after{
       content:'';
       display:block;
       width:34px;
@@ -72,8 +77,10 @@
     #btn-menu>.line{
       width:34px;
       height:6px;
+      margin:8px 0;
       border-radius:3px;
-      background-color:#ffffff;      
+      background-color:#ffffff; 
+      text-indent:-999999px;     
     }
 
 
